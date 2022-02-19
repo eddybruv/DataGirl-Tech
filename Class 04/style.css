@@ -1,0 +1,55 @@
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+/* div {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(#6DF035, #F8F82A);
+  overflow: auto;
+  margin: 20px;
+  float: left;
+} */
+
+/*
+  ===========================
+  Layout
+  ===========================
+*/
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+}
+
+.navbar {
+  position: fixed;
+  
+
+  height: 100px;
+  width: 100%;
+  background: orange;
+  /* float: */
+}
+
+.side-nav {
+  height: 100px;
+  width: 33.3333%;
+  background-color: teal;
+}
+
+
+.body {
+  height: 100px;
+  width: 33.3333%;
+  background: red;
+}
+
+.footer {
+  height: 100px;
+  width: 33.3333%;
+  background: brown;
+}
