@@ -8,14 +8,16 @@
 
 
 .header {
-  height: 50px;
+  background-color: white;
+  height: 70px;
+  width: 100vw;
   display: flex;
-  justify-content: space-between;
-  margin: 20px 20%;
+  justify-content: center;
+  gap: 30.33%;
   font-weight: 400;
   font-size: 1.6rem;
-  margin-bottom: 50px;
-  /* position: fixed; */
+  padding-top: 20px;
+  position: fixed;
 }
 
 .container {
@@ -66,6 +68,8 @@ p {
   width: auto;
   /* font-size: 20px; */
   text-align: center;
+  text-decoration: none;
+  color: black;
 }
 
 .num:hover {
@@ -125,4 +129,88 @@ em {
   width: 65%;
   text-align: center;
   padding-bottom: 100px;
+}
+
+.footer-container {
+  width: 65vw;
+  display: flex;
+  margin: 0 auto;
+}
+
+.items {
+  width: 33.333%;
+}
+
+.last-img-container img {
+  width: 70px;
+}
+
+.last-img-container {
+  /* border: 1px solid #808080; */
+  display: flex;
+  font-size: 25px;
+}
+
+.last-img-container:hover {
+  /* border: 1px solid #808080; */
+  display: flex;
+  background-color: #b6b6b6;
+}
+
+.footer h3, 
+.footer p {
+  text-align: left;
+}
+
+.footer p {
+  padding-top: 25px;
+  padding-right: 25px;
+  font-size: 16px;
+}
+
+.footer span {
+  display: block;
+  padding-top: 15px;
+}
+
+.blog {
+  margin-right: 20px;
+}
+
+.blog h3,
+.blog p {
+  text-align: left
+}
+
+.blog p {
+  padding: 25px;
+}
+
+.blog img {
+  width: 60px;
+  height: 60px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.last {
+  border-top: 1px solid #ddd8d8
+}
+
+.tags h3{
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.tags span {
+  padding: 0 10px;
+  display: inline-block;
+  color: white;
+  background: gray;
+  margin-bottom: 20px;
+  line-height: 1.5rem;
+}
+
+h3 + .words-1 {
+  background-color: black;
 }
