@@ -215,3 +215,7 @@ em {
 h3 + .words-1 {
   background-color: black;
 }
+
+.tags-container h3 {
+  margin-bottom: 20%;
+}
