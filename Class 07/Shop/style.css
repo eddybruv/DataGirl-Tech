@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5em;
+}
+
 /*
   ===============================
   Grid
@@ -5,13 +12,56 @@
 */
 
 .grid-container {
-  width: 100vw;
-  height: 100vh;
+  width: 70vw;
   display: grid;
-  grid-template-columns: 20vw 50vw;
-  justify-content: center;
+  grid-template-columns: 10vw 50vw;
+  margin: 0 auto;
 }
 
+
+
+/*
+  ===============================
+  Left Side
+  ===============================
+*/
+.left {
+  padding-top: 2rem;
+}
+
+.left h1 {
+  letter-spacing: 0.2em;
+  font-size: 24px;
+  padding-bottom: 8rem;
+}
+
+.left p {
+  width: 80%;
+  padding: 8px 16px;
+  font-size: 20px;
+  font-weight: 300;
+  color:rgb(141, 136, 136);
+}
+
+.left p:hover {
+  color: black;
+  background: rgb(141, 136, 136);
+}
+
+.left span {
+  display: block;
+  padding: 8px 16px;
+}
+
+.left span:hover {
+  color: black;
+  background: rgb(141, 136, 136);
+}
+
+.first-span {
+  display: block;
+  margin-top: 10rem;
+}
 
 /*
   ===============================
@@ -19,9 +69,8 @@
   ===============================
 */
 
-.left {
-  width: 100%;
-  position: sticky;
+.right {
+  padding-top: 2rem;
 }
 
 /*
@@ -30,7 +79,7 @@
   ===============================
 */
 .header-part img {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   width: 25px;
   height: 25px;
 }
@@ -38,10 +87,11 @@
 .header-part {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 1rem;
 }
 
-.shop {
-  justify-self: flex-end;
+.header-part h1{
+  font-size: 2rem
 }
 
 /*
@@ -65,9 +115,35 @@
 }
 
 .hero h3 {
+  padding: 1rem 0;
   font-size: 30px;
 }
 
+.hero button {
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  border: none;
+  padding: 8px 16px;
+}
+
+.hero button:hover {
+  color: black;
+  background-color: rgb(185, 173, 173);
+  cursor: pointer;
+}
+
+/*
+  =============================
+  8 items
+  ============================
+*/
+
+.items-8{
+  padding: 16px 0;
+  font-size: 100;
+  color:rgb(185, 173, 173)
+}
 
 /*
   =============================
@@ -83,6 +159,15 @@
 
 .img-container img {
   width: 100%;
+}
+
+.title {
+  text-transform: capitalize;
+  padding: 8px 0;
+}
+
+.amount {
+  font-weight: bold;
 }
 
 /*
@@ -104,7 +189,7 @@
 }
 
 .subscribe input {
-  width: 100%;
+  width: 90%;
   padding: 7px 7px;
 }
 
@@ -125,7 +210,7 @@
 
 .contact-container {
   background-color: rgb(243, 240, 240);
-  padding: 2.5rem 1rem;
+  padding: 4rem 1rem;
   display: grid;
   grid-template-columns: auto auto auto;
 }
@@ -135,9 +220,73 @@
   text-align: center;
 }
 
+.contact h3 {
+  padding-bottom: 1rem;
+}
+
+.contact form {
+  padding-top: 1rem;
+}
+
 .contact input,
 .contact button {
   width: 90%;
   margin-bottom: 10px;
   padding: 5px;
 }
+
+
+.contact button {
+  width: 93%;
+  color: white;
+  background-color: black;
+}
+
+.contact button:hover {
+  background-color: rgb(238, 234, 234);
+  border: none;
+  color: black;
+}
+
+.about {
+  text-align: center;
+}
+
+.about h3 {
+  padding-bottom: 1rem;
+}
+
+.about a {
+  color: black;
+  font-size: 14px;
+  line-height: 2em;
+}
+
+.store h3 {
+  padding-bottom: 1rem;
+}
+
+.store p {
+  font-size: 14px;
+  line-height: 2em;
+}
+
+.accept {
+  padding-top: 1rem;
+}
+
+.w3css {
+  width: 100%;
+  text-align: center;
+  color: white;
+  background: black;
+}
+
+.w3css p {
+  padding: 24px 0;
+}
+
+.w3css a {
+  color: white;
+}
+
