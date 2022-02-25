@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5em;
+}
+
+body {
+  width: 100%;
+}
+
+main {
+  width: 50%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.heading {
+  text-align: left;
+  padding: 1rem 0;
+}
+
+.container-1 {
+  height: fit-content;
+  padding: 2rem 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: grid;
+  grid-template-columns: 30fr 70fr;
+}
+
+.img-box {
+  height: fit-content;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.review-box {
+  padding-left: 6rem;
+  text-align: left;
+  height: fit-content;
+}
+
+.date {
+  padding-bottom: 5rem;
+}
+
+.review {
+  width: 50%;
+  padding-bottom: 1rem;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 3.8rem;
+}
+
+.title {
+  font-style: italic;
+  padding-bottom: 2rem;
+}
+
+.stars {
+  display: flex;
+  gap: 10px;
+  padding-top: 3rem;
+}
+
+.gold-bars {
+  width: 20px;
+  height: 20px;
+  background-color: gold;
+}
+
+.reserve-section {
+  display: grid;
+  grid-template-columns: 30fr 70fr;
+  text-align: left;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.reserve {
+  padding-right: 1rem;
+  line-height: 3px;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.text {
+  padding-top: 1rem;
+}
+
+.text {
+  padding-left: 6rem;
+}
+
+.last-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  padding: 1rem 0;
+  gap: 1.4rem;
+}
+
+.first, .second, .third {
+  padding: 1rem;
+  border: 3px solid black;
+  height: fit-content;
+} 
+
+.price {
+  display: inline;
+}
+
+.price, .sec-name {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+ul {
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+  font-size: 16px;
+}
+
+.last-container button {
+  width: 95%;
+  padding: .5rem 0;
+  border: 3px solid black;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.last-container button:hover {
+  border: 3px solid white;
+  color: white;
+  background-color: black;
+}
+
+.third {
+  color: white;
+  background: black;
+}
+
+.third button {
+  border: 3px solid white;
+  color: white;
+  background-color: black;
+}
+
+.third button:hover {
+  border: 3px solid black;
+  color: black;
+  background-color: white;
+}
