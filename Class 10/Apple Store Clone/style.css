@@ -1,0 +1,153 @@
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  padding: 1rem 0;
+  text-align: center;
+  background-color: azure;
+}
+
+header a{
+  text-decoration: none;
+  color: blue;
+}
+
+main {
+  padding-top: 3rem;
+}
+.pro-13 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.pro-13 .heading{
+  text-align: center;
+  height: fit-content;
+}
+
+.heading h2 {
+  font-size: 4em;
+  padding-bottom: .5rem;
+}
+
+.heading .caption {
+  font-size: 2em;
+  padding-bottom: 1rem;
+}
+
+.heading a {
+  padding-top: 1.5rem;
+  padding-right: 2rem;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.pro-13-img img{
+  height: 60vh;
+}
+
+/*
+  ============================
+  13 Normal
+  ============================
+*/
+
+.normal-13 {
+  height: 70vh;
+  background: rgb(32, 18, 32) url("img/13-normal.png") no-repeat;
+  background-size: 50%;
+  background-position: center bottom;
+  color: white;
+  margin-bottom: 1rem
+}
+
+.normal-13 .heading {
+  padding-top: 3rem;
+  text-align: center;
+  height: fit-content;
+}
+
+.green-watch {
+  padding-top: 3rem;
+  text-align: center;
+  height: 70vh;
+  background: url("img/watch.jpg") no-repeat;
+  background-size: 100%;
+  margin-bottom: 1rem;
+}
+
+.green-watch .small {
+  color: rgb(180, 73, 73);
+  padding-bottom: .7rem;
+}
+
+.green-watch .watch {
+  font-size: 3em;
+  font-weight: bold;
+  padding-bottom: .7rem;
+}
+
+.green-watch .series-7 {
+  font-size: 2em;
+  color: red;
+  padding-bottom: .7rem;
+}
+
+.green-watch .intro {
+  font-size: 2em;
+  padding-bottom: .7rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(3, 70vh);
+  gap: 10px;
+}
+
+.mac-book, .ipad{
+  background: url("img/laptop.jpg") no-repeat;
+  background-position: center bottom;
+  text-align: center;
+  padding-top: 3rem
+}
+
+.mac-book .title {
+  font-size: 3em;
+  padding-bottom: 1rem;
+}
+
+.mac-book p {
+  font-size: 1.5em;
+  padding-bottom: 1rem;
+}
+
+.mac-book p a {
+  padding-top: 1.5rem;
+  padding-right: 2rem;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: blue;
+}
+/* .mac-book  */
+
+.air-pods {
+  background: url("img/card.jpg") no-repeat;
+  background-position: center;
+}
+
+.fitness {
+  background: url("img/tennis-woman.jpg");
+  background-position: center;
+}
