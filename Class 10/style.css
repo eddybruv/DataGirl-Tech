@@ -1,0 +1,27 @@
+:root {
+  --background-color: rgb(85, 91, 163);
+  --primary-color: rgb(127, 151, 231);
+}
+
+.navbar {
+  background-color: var(--background-color);
+  height: 100px;
+  /* width: 60%; */
+}
+
+.sidebar {
+  height: 50vw;
+  background-color: var(--primary-color);
+}
+
+.card {
+  height: 20vh;
+  padding: 10px;
+  background-color: aqua;
+}
+
+@media screen and (max-width: 414.5px) {
+  .sidebar {
+    display: none;
+  }
+}
