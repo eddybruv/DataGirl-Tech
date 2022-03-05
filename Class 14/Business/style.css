@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin-bottom:0;
+}
+
+main {
+  color: white;
+  background-color: rgb(51, 55, 80);
+}
+
+.header {
+  text-align: center;
+}
+
+.line {
+  width: 10%;
+  border-top: 3px solid yellow;
+  margin: 1rem auto;
+}
+
+.inside{
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(103, 109, 148);
+}
+
+.title {
+  text-align: center;
+  color: yellow;
+}
+
+.text {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.more {
+  width: fit-content;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  color: yellow;
+}
+
+.small-box {
+  width: fit-content;
+  padding: 1rem 2rem;
+  color: black;
+  background-color: yellow;
+  margin: 2rem auto;
+  border-radius: .5rem;
+}
+
+.small-box-1 {
+  padding: 2rem;
+}
