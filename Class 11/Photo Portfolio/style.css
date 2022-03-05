@@ -1,0 +1,62 @@
+.header {
+  background: url("img/photographer.jpg") no-repeat;
+  color: white;
+  height: 100%;
+  background-size: cover;
+}
+
+.name-job {
+  width: fit-content;
+  height: fit-content;
+  /* margin: 0 auto; */
+  border: 1px solid rgb(182, 179, 179);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.h1 {
+  font-size: 3em;
+}
+
+.h3{
+  text-align: center;
+}
+.navigation {
+  width: fit-content;
+  background-color: antiquewhite;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+.home, .portfolio, .contact {
+  padding: .5rem 1rem;
+}
+
+.home:hover, .portfolio:hover, .contact:hover {
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+.photos-container img {
+  margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width: 810px) {
+  .h3 {
+    display: none;
+  }
+  .photos-container  {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 412px){
+  .navigation {
+    margin-top: 0;
+    width: 100%;
+    margin: 0;
+    justify-content: space-around;
+  }
+  
+}
