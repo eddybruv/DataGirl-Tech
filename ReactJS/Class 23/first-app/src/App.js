@@ -1,8 +1,10 @@
-import Name from './components/Name.jsx';
-import style from './App.module.css';
+import Card from './components/NameCards'
+import React from 'react'
 
 function App () {
-  return <p className={style.yaya}>Hello <Name/>♥</p>;
+   return <>
+    <Card />
+  </>
 }
 
 export default App;
