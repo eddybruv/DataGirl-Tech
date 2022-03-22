@@ -27,6 +27,7 @@ function NameCard() {
     width: 'fit-content',
     fontSize: "1.2rem",
     padding: "3rem",
+    margin: '0px auto'
   };
 
   let createCard = people.map((person) => {
