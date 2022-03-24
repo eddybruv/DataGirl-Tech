@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import Todo from './components/Todo'
+// import Todo from './components/Todo'
+import Task1 from './Dashboard/Index' 
 
 function App () {
 
@@ -27,7 +28,7 @@ function App () {
 
   return (
     <div>
-      <Todo />
+      <Task1 />
     </div>
   )
 }
