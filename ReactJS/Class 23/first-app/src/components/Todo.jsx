@@ -21,7 +21,7 @@ export default function Todo() {
 
   const [todoList, setTodoList] = useState([]);
   const createTask = () => {
-    let newList = [task, ...todoList];
+    let newList = [{text:task, color:colors[Math.floor(Math.random() * 10)]}, ...todoList];
     setTodoList(newList);
     setTask("");
   };
@@ -40,7 +40,7 @@ export default function Todo() {
     display: "flex",
     justifyContent: "space between",
     padding: ".3rem 1rem",
-    background: colors[Math.floor(Math.random() * 10)],
+    
     fontSize: "1.4rem",
     fontFamily: "monospace",
     margin: ".2rem",
@@ -61,7 +61,7 @@ export default function Todo() {
   };
 
   const formStyle = {
-    marginBottom: "1rem",
+    marginBottom: "2rem",
   };
 
   return (
@@ -81,10 +81,10 @@ export default function Todo() {
         <input type="text" placeholder="filter task" style={formInput} />
       </form>
       <div>
-        {todoList.map((item) => {
+        {todoList.map((item,index) => {
           return (
-            <div>
-              <p style={taskStyle}>{item}</p>
+            <div key={index} style={{ background: item.color }}>
+              <p style={taskStyle}>{item.text}</p>
             </div>
           );
         })}
