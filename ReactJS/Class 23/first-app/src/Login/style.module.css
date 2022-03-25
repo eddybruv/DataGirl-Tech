@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.general-container {
+  width: 80%;
+  height: 100%;
+}
+
+.task2-container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(243, 243, 243);
+}
+
+.big-title {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.first-component {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 1rem;
+}
+
+.right-first {
+  /* margin-left: auto; */
+  padding: 1rem;
+  background-color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.card {
+  padding: .5rem;
+  background-color: white;
+  width: fit-content;
+  display: flex;
+}
+
+.second-component {
+  /* color: aliceblue; */
+}
