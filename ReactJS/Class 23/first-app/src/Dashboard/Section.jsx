@@ -3,7 +3,7 @@ import instagram from './download.jpeg'
 import Card from './Card'
 
 function Section({columns}) {
-  const list = [
+  const listOne = [
     { img: instagram, firstText: "First text", secondText: "second text" },
     { img: instagram, firstText: "First text", secondText: "second text" },
     { img: instagram, firstText: "First text", secondText: "second text" },
@@ -18,7 +18,7 @@ function Section({columns}) {
     { img: instagram, firstText: "First text", secondText: "second text" },
   ];
 
-  const listCards = list.map((item, index) => {
+  const listCards = listOne.map((item, index) => {
     return <Card item={item} key={index}/>
   })
 
