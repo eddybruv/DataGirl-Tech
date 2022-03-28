@@ -1,38 +1,196 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
+  line-height: 2rem;
+}
+
+.upper-section {
+  width: 60%;
+  margin: 0 auto;
+  height: 100vh;
+  margin-top: 4rem;
+}
+
+.upper-section .header h1 {
   text-align: center;
+  padding: 3rem 0 1rem 0;
+  font-size: 2.5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.upper-section .header p {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  font-weight: 300;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box-container {
+  margin-top: 1rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 1.5rem;
+}
+
+.two-box {
+  width: 33.3333%;
+}
+
+.card {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.card .text {
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+
+.card button {
+  width: 100%;
+  background-color: white;
+  font-weight: 500;
+  border: none;
+  padding: 0.3rem 0;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+button .arrow-icon {
+  padding: 0 1rem;
+}
+
+.lower-section {
+  width: 60%;
+  margin: 0 auto;
+  height: 70vh;
+}
+
+.lower-section .header h2 {
+  font-size: 2.8rem;
+  padding: 1.5rem 0;
+}
+
+.lower-section .header p {
+  font-weight: 300;
+}
+
+.lower-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.collapsable-box {
+  width: 50%;
+}
+
+.header-icon {
+  display: flex;
+  align-items: center;
+}
+
+.lower-card {
+  border: 2px solid slateblue;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+}
+
+.plus-icon {
+  margin-left: auto;
+  transition: 1s;
+}
+
+.rotate {
+  transform: rotateY(180deg) rotate(45deg);
+}
+
+.plus-icon:hover {
+  cursor: pointer;
+}
+
+.hide-text {
+  display: none;
+}
+
+.footer {
+  height: 30vh;
   color: white;
+  background-color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-container {
+  width: 60%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+  align-items: flex-start;
+  /* gap: 5rem; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 55px;
+  width: 55px;
+}
+
+.logo span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-weight: 300;
+}
+
+.footer ul {
+  margin-top: 1rem;
+}
+
+.footer p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.form {
+  width: 40%;
+}
+
+form {
+  padding: 2rem 0;
+}
+
+.footer input {
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  width: 70%;
+}
+
+.footer button {
+  width: 25%;
+  background-color: #ffcac4;
+  color: black;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-left: 0.5rem;
 }
