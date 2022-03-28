@@ -1,6 +1,6 @@
 import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faCaretRight, faCodeFork, faDoorClosed, faFeed, faScrewdriver, faSquareXmark } from "@fortawesome/free-solid-svg-icons";
+import { faCaretRight, faCodeFork, faDoorClosed, faFeed, faRightFromBracket, faScrewdriver, faSquareXmark } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
   return (
@@ -25,7 +25,7 @@ function Navbar() {
             </ul>
           </div>
           <div className="logout">
-            <FontAwesomeIcon icon={faDoorClosed} />
+            <FontAwesomeIcon icon={faRightFromBracket} />
           </div>
         </div>
       </div>
