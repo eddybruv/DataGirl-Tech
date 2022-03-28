@@ -1,21 +1,33 @@
 import React from 'react'
 import Card from './Card'
-import instagram from './../Img/download.jpeg'
+import {instagram, spotify, twitter, adword, apple, pinterest, nike, skype, tum, slack, citymapper} from '../Img/index'
 
 function Sections({columns}) {
   const listOne = [
-    { img: instagram, title: "Facebook", desc: "Social Media" },
-    { img: instagram, title: "Apple", desc: "Hardware & Software" },
-    { img: instagram, title: "Spotify", desc: "Music" },
-    { img: instagram, title: "Twitter", desc: "Social Platform" },
+    {
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/1200px-Facebook_icon_2013.svg.png",
+      title: "Facebook",
+      desc: "Social Media",
+    },
+    {
+      img: apple,
+      title: "Apple",
+      desc: "Hardware & Software",
+    },
+    {
+      img: spotify,
+      title: "Spotify",
+      desc: "Music",
+    },
+    { img: twitter, title: "Twitter", desc: "Social Platform" },
     { img: instagram, title: "Instagram", desc: "Social Platform" },
-    { img: instagram, title: "Pinterest", desc: "Social Media" },
-    { img: instagram, title: "Slack", desc: "Team Communications" },
-    { img: instagram, title: "Tumbkr", desc: "Social Media" },
-    { img: instagram, title: "Skype", desc: "Communications" },
-    { img: instagram, title: "Adwords", desc: "Marketing" },
-    { img: instagram, title: "Nike", desc: "Clothing & Equipment" },
-    { img: instagram, title: "Citymapper", desc: "Maps" },
+    { img: pinterest, title: "Pinterest", desc: "Social Media" },
+    { img: slack, title: "Slack", desc: "Team Communications" },
+    { img: tum, title: "Tumblr", desc: "Social Media" },
+    { img: skype, title: "Skype", desc: "Communications" },
+    { img: adword, title: "Adwords", desc: "Marketing" },
+    { img: nike, title: "Nike", desc: "Clothing & Equipment" },
+    { img: citymapper, title: "Citymapper", desc: "Maps" },
   ];
 
   const prodOne = listOne.map((card, index) => {
