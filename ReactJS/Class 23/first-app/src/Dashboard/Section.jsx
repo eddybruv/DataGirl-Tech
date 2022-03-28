@@ -1,10 +1,14 @@
-import React from 'react'
-import instagram from './download.jpeg'
-import Card from './Card'
+import React from "react";
+import instagram from "./download.jpeg";
+import Card from "./Card";
 
-function Section({columns}) {
+function Section({ columns }) {
   const listOne = [
-    { img: instagram, firstText: "First text", secondText: "second text" },
+    {
+      img: "https://www.flaticon.com/free-icons/instagram",
+      firstText: "First text",
+      secondText: "second text",
+    },
     { img: instagram, firstText: "First text", secondText: "second text" },
     { img: instagram, firstText: "First text", secondText: "second text" },
     { img: instagram, firstText: "First text", secondText: "second text" },
@@ -19,17 +23,20 @@ function Section({columns}) {
   ];
 
   const listCards = listOne.map((item, index) => {
-    return <Card item={item} key={index}/>
-  })
+    return <Card item={item} key={index} />;
+  });
 
   return (
     <div className="section-container">
       <div className="left-section">Left Section </div>
-      <div style={{gridTemplateColumns: `repeat(${columns}, 1fr)`}} className="right-section">
+      <div
+        style={{ gridTemplateColumns: `repeat(${columns}, 1fr)` }}
+        className="right-section"
+      >
         {listCards}
       </div>
     </div>
   );
 }
 
-export default Section
+export default Section;
