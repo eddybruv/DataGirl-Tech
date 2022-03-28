@@ -1,15 +1,17 @@
 import React from "react";
 import Card from "./Card";
-import instagram from '../Img/download.jpeg'
+import {
+  opera, chrome, firefox, safari, adobe, itunes
+} from '../Img/index'
 
 function SectionTwo({columns}) {
   const listTwo = [
-    { img: instagram, title: "Chrome", desc: "Web Browser" },
-    { img: instagram, title: "Firefox", desc: "Web Browser" },
-    { img: instagram, title: "Safari", desc: "Web Browser" },
-    { img: instagram, title: "Opera", desc: "Web Browser" },
-    { img: instagram, title: "Adobe CC", desc: "Productivity" },
-    { img: instagram, title: "iTunes", desc: "Music" },
+    { img: chrome, title: "Chrome", desc: "Web Browser" },
+    { img: firefox, title: "Firefox", desc: "Web Browser" },
+    { img: safari, title: "Safari", desc: "Web Browser" },
+    { img: opera, title: "Opera", desc: "Web Browser" },
+    { img: adobe, title: "Adobe CC", desc: "Productivity" },
+    { img: itunes, title: "iTunes", desc: "Music" },
   ];
 
   const prodTwo = listTwo.map((card, index) => {
