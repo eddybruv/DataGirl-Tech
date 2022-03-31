@@ -36,7 +36,7 @@ function UpperSection() {
     },
     {
       title: "Strategic Business Reporting",
-      text: "Strategic Business Reporting is a professional level training course. It covers topics related to advanced financial reporting including leasing",
+      text: "Strategic Business Reporting is a professional level training course. It covers topics related to advanced financial reporting including leasing. Lorem ipsum dolor sit amet.",
       color: "#b4e0c5",
     },
   ];
