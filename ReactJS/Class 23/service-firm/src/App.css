@@ -72,11 +72,12 @@ button .arrow-icon {
 
 .lower-section .header h2 {
   font-size: 2.8rem;
-  padding: 1.5rem 0;
+  padding-bottom: 1.5rem;
 }
 
 .lower-section .header p {
   font-weight: 300;
+  padding-bottom:2rem ;
 }
 
 .lower-container {
@@ -101,12 +102,17 @@ button .arrow-icon {
   border-radius: 15px;
 }
 
+.title {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
 .plus-icon {
   margin-left: auto;
   transition: 1s;
 }
 
-.rotate {
+.plus-icon:hover {
   transform: rotateY(180deg) rotate(45deg);
 }
 
@@ -114,8 +120,11 @@ button .arrow-icon {
   cursor: pointer;
 }
 
-.hide-text {
-  display: none;
+.p-text {
+  transition: 1s ease-in-out;
+  padding-top: 1rem;
+  font-weight: 100;
+  /* display: none; */
 }
 
 .footer {
