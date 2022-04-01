@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 function LowerCard({ item }) {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
 
   const handleShow = (event) => {
     setShow(!show);
@@ -20,7 +20,7 @@ function LowerCard({ item }) {
           icon={faPlus}
         />
       </div>
-      {!show && <p className="p-text">{item.text}</p>}
+      {show && <p className="p-text">{item.text}</p>}
     </div>
   );
 }
