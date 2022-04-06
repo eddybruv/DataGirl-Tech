@@ -16,7 +16,7 @@ const users = [
   {id: 2, name: 'Sonia', age: 18},
   {id: 3, name: 'Kyle', age: 0}
 ];
-
+// replace with suitable view
 app.get('/todo-list', (req, res)=> {
   res.render('todoList', { todoList });
 })
@@ -25,11 +25,6 @@ app.post('/todo-list', (req,res) => {
   todoList.push({...req.body, id: uuidv4()});
   res.render('todoList', {todoList})
 })
-
-
-
-
-
 
 app.get('/', (req, res) => {
   res.send("You just visited home route")
