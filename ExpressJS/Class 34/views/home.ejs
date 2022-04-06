@@ -1,0 +1,8 @@
+<%- include('../Components/navbar.ejs') %>
+<%- include('../Components/header.ejs') %>
+
+<% users.map((user) => {%>
+    <h4>My name is <%= user.name %> and I am <%= user.age%> years old  </h4>
+<% }) %>    
+
+<%- include('../Components/footer.ejs') %>
