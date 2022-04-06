@@ -1,0 +1,60 @@
+<h1
+  style="
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  "
+>
+  Todo App
+</h1>
+<div style="width: 45vw; margin: 0 auto">
+  <form 
+    action="/todo-list"
+    method="post"
+    style="
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      width: fit-content;
+      padding: 1rem;
+      border-radius: 4px;
+      box-shadow: 1px 1px 5px black;
+    "
+  >
+    <input
+      name="todo"
+      type="text"
+      placeholder="Enter Title"
+      style="
+        padding: 1rem;
+        width: 40vw;
+        outline: none;
+        border: 1px solid gray;
+        border-radius: 5px;
+      "
+    />
+    <br />
+    <button
+      type="submit"
+      style="
+        margin: 0 auto;
+        background-color: purple;
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+      "
+    >
+      ADD
+    </button>
+  </form>
+
+  <% todoList.map((task) => {%>
+    <div style="margin: 1rem; padding: 0.5rem; border: 1px solid purple">
+    <%= task.todo %> 
+  </div>
+<% }) %> 
+  
+</div>
