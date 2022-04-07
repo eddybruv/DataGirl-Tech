@@ -5,7 +5,7 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 function LowerCard({ item }) {
   const [show, setShow] = useState(false);
 
-  const handleShow = (event) => {
+  const handleShow = () => {
     setShow(!show);
     console.log(show);
   };
