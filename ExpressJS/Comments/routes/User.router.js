@@ -27,7 +27,25 @@ router.post("/login", async (req, res) => {
 // update user
 router.put("/update_profile", async (req, res) => {
   const { _id } = req.body;
-  const updateUser = await UserModel.findOneAndUpdate({ _id: _id }, {...req.body});
+  const updateUser = await UserModel.findOneAndUpdate(
+    { _id: _id },
+    { ...req.body }
+  );
   res.send(updateUser);
 });
+
+// delete user
+router.delete("/delete_user", async (req, res) => {
+  const { _id, password } = req.body;
+  const deleteUser = await UserModel.findOneAndDelete(
+    { _id: _id, password: password },
+    { ...req.body }
+  );
+  res.send(
+    deleteUser.deleteCount > 0
+      ? { success: true, user: 'User deleted' }
+      : { success: false, message: "Could not delete user" }
+  );
+});
+
 module.exports = router;
