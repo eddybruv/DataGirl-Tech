@@ -38,7 +38,7 @@
 
 - SEE_POST: 
   data: {
-
+    
   }
 
 - UPDATE_POST: 
