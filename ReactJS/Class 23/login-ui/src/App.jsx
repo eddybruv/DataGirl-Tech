@@ -1,6 +1,5 @@
 import React from 'react'
 import './App.css';
-import Header from './Components/Header'
 import SectionOne from './Components/SectionOne'
 import SectionTwo from './Components/SectionTwo'
 
