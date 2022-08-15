@@ -1,2 +1,2 @@
 # DataGirl-Tech
-Files from bootcamp work
+Stuff I learned from the boot camp 😃
